@@ -39,6 +39,8 @@ You need to **navigate to the truffle folder** of the project and run:
 truffle develop
 ```
 
+If you get an error while doing that, try to run the same command from **git bash** - it should be installed automatically with [Git](https://git-scm.com/downloads).
+
 ## Connecting to the local Ethereum node via `Node.js`
 
 Not to confuse `Node.js` with your Ethereum node, they have nothing in common.
@@ -63,6 +65,8 @@ This will run a script that will publish a contract on your local blockchain and
 http-server
 ```
 
+`Ctrl + C` closes it.
+
 4. Install MetaMask in chrome
 
 5. Open MetaMask and click the "Import existing DEN"
@@ -81,3 +85,7 @@ Because every truffle develop session uses the same account set.
 8. Enter the URL `http://localhost:9545/` and click save. Go back and you should have successfully connected to your local node!
 
 9. Visit `127.0.0.1:8080` and use the website!
+
+## Developing DAPPs
+
+You can edit the website files (html and js files) directly and they will be updated when you reload the page. **If you're using chrome, reload the page with Ctrl + Shift + R instead, because chrome will cache your last version and won't update it**.
