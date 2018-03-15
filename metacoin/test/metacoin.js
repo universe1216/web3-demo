@@ -1,12 +1,9 @@
-var MetaCoin = artifacts.require("./MetaCoin.sol");
+var MetaCoin = artifacts.require("MetaCoin");
 
 contract('MetaCoin', function(accounts) {
-  it("web3 should be version 0.20.4", function() {
-    assert.equal(web3.version.api, '0.20.4', "Web3 is not version 0.20.4");
-  });
   it("should put 10000 MetaCoin in the first account", function() {
-    return MetaCoin.deployed().then(function(instance) {	
-		return instance.getBalance.call(accounts[0]);
+    return MetaCoin.deployed().then(function(instance) {
+      return instance.getBalance.call(accounts[0]);
     }).then(function(balance) {
       assert.equal(balance.valueOf(), 10000, "10000 wasn't in the first account");
     });
