@@ -20,7 +20,7 @@ npm install -g truffle web3@0.20.4 http-server
 
 If you have git installed, run:
 ```
-git clone https://github.com/Zvezdin/web3_demo
+git clone https://github.com/universe1216/web3-demo
 ```
 
 Or just download the repository as a zip and extract somewhere
